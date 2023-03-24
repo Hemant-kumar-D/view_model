@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:id="@+id/edit_number"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </EditText>
+
+
+        <androidx.appcompat.widget.AppCompatToggleButton
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:textStyle="bold"
+           android:backgroundTint="@color/purple_200"
+            app:layout_constraintBottom_toTopOf="@id/text_setdata"
+            app:layout_constraintEnd_toEndOf="@id/edit_number"
+
+            app:layout_constraintStart_toStartOf="@id/edit_number"
+            app:layout_constraintTop_toBottomOf="@id/edit_number">
+
+        </androidx.appcompat.widget.AppCompatToggleButton>
+
+        <TextView
+            android:id="@+id/text_setdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/btn_submit"
+            app:layout_constraintStart_toStartOf="@id/btn_submit"
+            app:layout_constraintTop_toBottomOf="@id/btn_submit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
